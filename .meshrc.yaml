@@ -1,0 +1,6 @@
+sources:
+  - name: Planes
+    handler:
+      openapi:
+        source: http://localhost:3004/doc
+        endpoint: http://localhost:3004
