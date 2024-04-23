@@ -2,7 +2,8 @@
   "name": "graphql-gateway",
   "main": "index.js",
   "scripts": {
-    "start": "mesh dev",
+    "start": "mesh start --require dotenv/config",
+    "dev": "mesh dev --require dotenv/config",
     "build": "mesh build"
   },
   "dependencies": {

@@ -4,3 +4,7 @@ sources:
       openapi:
         source: http://localhost:3004/doc
         endpoint: http://localhost:3004
+        schemaHeaders:
+          Authorization: "{env.SECRET_TOKEN}"
+        operationHeaders:
+          Authorization: "{env.SECRET_TOKEN}"
