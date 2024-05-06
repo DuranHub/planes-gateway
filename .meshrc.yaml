@@ -1,10 +1,9 @@
 sources:
   - name: Planes
     handler:
-      openapi:
-        source: http://localhost:3004/doc
-        endpoint: http://localhost:3004
-        schemaHeaders:
+      graphql:
+        endpoint: http://localhost:3004/graphql
+        schemaHeaders: 
           Authorization: "{env.SECRET_TOKEN}"
         operationHeaders:
           Authorization: "{env.SECRET_TOKEN}"
