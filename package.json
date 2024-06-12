@@ -3,6 +3,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mesh start --require dotenv/config",
+    "node:start": "node index.js",
     "dev": "mesh dev --require dotenv/config",
     "build": "mesh build"
   },

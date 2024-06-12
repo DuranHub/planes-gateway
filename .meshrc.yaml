@@ -2,7 +2,8 @@ sources:
   - name: Planes
     handler:
       graphql:
-        endpoint: http://localhost:3004/graphql
+        source: './schema.graphql'
+        endpoint: '{env.ENGINE_URL}/graphql'
         schemaHeaders: 
           Authorization: "{env.SECRET_TOKEN}"
         operationHeaders:
